@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 const { ObjectId } = mongoose.Schema.Types;
-import { TNameId } from './car_type.model';
+import { TNameId } from './car-type.model';
 type TObjectId = mongoose.Types.ObjectId;
 
 export type TCar = {

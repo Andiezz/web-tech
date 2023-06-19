@@ -5,7 +5,6 @@ import _Car from '../models/car.model';
 import _Driver from '../models/driver.model';
 import _Register from '../models/register.model';
 import { convertToNumber, getRandomInt } from '../utils';
-import cron from 'node-cron'
 
 /**
  * [ADMIN,PM] createDriver
@@ -262,8 +261,3 @@ export const unDeliverDriver = async (req: Request, res: Response): Promise<void
     data: { driver_detail: updatedDriver },
   });
 };
-
-// cron.schedule('* * * * * *', async () => {
-//   const drivers = await _Driver.find();
-//   console.log(drivers)
-// })
